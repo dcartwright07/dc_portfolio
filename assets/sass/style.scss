@@ -1,0 +1,27 @@
+/*
+Theme Name: Porto - Responsive HTML5 Template
+Author: Okler Themes
+Author URI: http://www.okler.net
+Description: Theme was purchase on Themeforest.net as a HTML5 template.
+Version: 7.5.0
+
+Editor: Dominic Cartwright
+Editor URI: http://dominiccartwright.com
+This theme was coverted from an HTML5 template to a WordPress theme by Dominic Cartwright to use for his portfolio.
+*/
+
+// Theme Styles
+@import 'theme';
+@import 'theme-elements';
+@import 'theme-blog';
+
+// Plugin Styles
+@import 'vendor/rs-plugin-settings';
+@import 'vendor/rs-plugin-layers';
+@import 'vendor/rs-plugin-navigation';
+
+// Theme Skin Styles
+@import 'skin-default';
+
+// Custom Styles
+@import 'custom';
