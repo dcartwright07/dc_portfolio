@@ -8,3 +8,8 @@ The following plugins are used for development of my theme:
 - Custom Post Type UI *by : WebDevStudios*
 - Query Monitor *by: John Blackbourn*
 - Theme Check *by: Otto42, pross*
+
+### Tools
+
+**CodeKit:**
+The CodeKit application is being used to compile the sass files in this project.
