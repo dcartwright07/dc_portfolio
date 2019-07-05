@@ -1,1 +1,15 @@
 /* Add here all your CSS customizations */
+
+$link-color: #0099e6;
+
+.social-icons {
+	&.social-icons-opacity-light {
+		li {
+			a {
+				&:hover {
+					background: $link-color;
+				}
+			}
+		}
+	}
+}

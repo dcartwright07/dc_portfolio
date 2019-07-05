@@ -32213,5 +32213,7 @@ html.boxed .body {
   border-top-color: #0088CC; }
 
 /* Add here all your CSS customizations */
+.social-icons.social-icons-opacity-light li a:hover {
+  background: #0099e6; }
 
 /*# sourceMappingURL=style.css.map */

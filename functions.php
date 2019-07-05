@@ -9,7 +9,8 @@ function register_theme_menus() {
 
 	register_nav_menus(
 		array(
-			'primary-menu' => __( 'Primary Menu' )
+			'primary-menu' => __( 'Primary Menu' ),
+			'footer-social-media-menu' => __( 'Social Media' )
 		)
 	);
 
