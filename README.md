@@ -1,4 +1,4 @@
-# dc_portfolio
+# Dominic Cartwright Portfolio
 This is the wordpress version of my portfolio website.
 
 ### Plugins
