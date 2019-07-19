@@ -1,10 +1,12 @@
 <?php
 
 // Turn theme support on for various features
+// ====================================
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
 // Initialize menus to use in the admin panel
+// ====================================
 function register_theme_menus() {
 
 	register_nav_menus(
@@ -18,6 +20,7 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 // Import all CSS
+// ====================================
 function dc_theme_style() {
 
 	// Webfonts
@@ -39,6 +42,7 @@ function dc_theme_style() {
 add_action( 'wp_enqueue_scripts', 'dc_theme_style' );
 
 // Import all JavaScript
+// ====================================
 function dc_theme_js() {
 
 	// Head Scripts
@@ -72,6 +76,7 @@ function dc_theme_js() {
 add_action( 'wp_enqueue_scripts', 'dc_theme_js' );
 
 // Add SVG image support to available MIME types
+// ====================================
 function add_file_types_to_uploads( $file_types ) {
 
 	$new_filetypes = array();
@@ -81,5 +86,77 @@ function add_file_types_to_uploads( $file_types ) {
 
 }
 add_filter( 'upload_mimes', 'add_file_types_to_uploads' );
+
+// Create Custom Post Types
+// ====================================
+function dc_register_custom_post_types() {
+
+	$portfolio_args = array(
+		'labels'             	=> array(
+			'name' 								=> __( 'Portfolio' ),
+			'singular_name'				=> __( 'Portfolio Item'),
+			'menu_name'          	=> __( 'Portfolio' ),
+			'name_admin_bar'     	=> __( 'Portfolio Item' ),
+			'add_new'            	=> __( 'Add New', 'Portfolio' ),
+			'add_new_item'       	=> __( 'Add New Item' ),
+			'new_item'           	=> __( 'New Portfolio Item' ),
+			'edit_item'          	=> __( 'Edit Portfolio Item' ),
+			'view_item'          	=> __( 'View Portfolio Item' ),
+			'all_items'          	=> __( 'All Portfolio Items' ),
+			'search_items'       	=> __( 'Search Portfolio' ),
+			'parent_item_colon'  	=> __( 'Parent Portfolio:' ),
+			'not_found'          	=> __( 'No Portfolio Items found.' ),
+			'not_found_in_trash' 	=> __( 'No Portfolio Items found in Trash.' )
+		),
+		'public'             	=> true,
+		'publicly_queryable' 	=> true,
+		'show_ui'            	=> true,
+		'show_in_menu'       	=> true,
+		'show_in_rest'				=> true,
+		'query_var'          	=> true,
+		'rewrite'            	=> array( 'slug' => 'book' ),
+		'capability_type'    	=> 'post',
+		'has_archive'        	=> true,
+		'hierarchical'       	=> false,
+		'menu_position'      	=> null,
+		'supports'           	=> array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+	);
+
+	register_post_type( 'portfolio', $portfolio_args );
+
+}
+add_action( 'init', 'dc_register_custom_post_types' );
+
+// Create Custom Taxonomies
+// ====================================
+function dc_register_custom_taxonomies() {
+
+	$language_tax_args = array(
+		'hierarchical'      => true,
+		'public'						=> true,
+		'show_ui'           => true,
+		'show_in_menu'			=> true,
+		'show_admin_column' => true,
+		'show_in_rest'			=> true,
+		'label'             => __( 'Languages' ),
+		'query_var'         => true,
+	);
+
+	$platform_tax_args = array(
+		'hierarchical'      => true,
+		'public'						=> true,
+		'show_ui'           => true,
+		'show_in_menu'			=> true,
+		'show_admin_column' => true,
+		'show_in_rest'			=> true,
+		'label'             => __( 'Platforms' ),
+		'query_var'         => true,
+	);
+
+	register_taxonomy( 'Languages', 'portfolio', $language_tax_args );
+	register_taxonomy( 'Platforms', 'portfolio', $platform_tax_args );
+
+}
+add_action( 'init', 'dc_register_custom_taxonomies' );
 
 ?>
