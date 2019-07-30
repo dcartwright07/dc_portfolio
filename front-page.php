@@ -5,8 +5,8 @@
 	<div class="container container-lg">
 		<div class="row">
 			<div class="col-lg-7 pt-5">
-				<h2 class="font-weight-bold text-10 line-height-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span class="text-5">Hello, I’m Dominic Cartwright. I’m a Web Developer From The Bahamas.</span></h2>
-				<h4 class="text-6 line-height-6 font-weight-normal appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"><span class="opacity-6">If you are looking some help with your web presence, I can help.</span></h4>
+				<h2 class="font-weight-bold text-10 line-height-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span class="text-5">Portfolio</span></h2>
+				<h4 class="text-6 line-height-6 font-weight-normal appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"><span class="opacity-6">Web Development</span></h4>
 				<a class="btn btn-primary btn-with-arrow mb-2 ml-0 pl-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" href="/contact">Contact Me <span><i class="fas fa-chevron-right"></i></span></a>
 			</div>
 		</div>
@@ -14,251 +14,51 @@
 
 	<hr class="my-5">
 
-	<div class="container py-2">
+	<div class="container container-lg">
 
-		<div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
+		<div class="sort-destination-loader sort-destination-loader-loaded mt-4 pt-2">
 			<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
 
+				<?php
 
-				<div class="col-sm-6 col-lg-3 isotope-item brands">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
+					$num_posts = -1;
+					if( is_front_page() ) $num_posts = 10;
 
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Presentation</span>
-										<span class="thumb-info-type">Brand</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
+					$args = array(
+						'post_type' => 'portfolio',
+						'post_per_page' => $num_posts
+					);
+					$query =  new WP_Query( $args );
 
-				<div class="col-sm-6 col-lg-3 isotope-item medias">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<span class="owl-carousel owl-theme dots-inside m-0" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}"><span><img src="img/projects/project-1.jpg" class="img-fluid border-radius-0" alt=""></span><span><img src="img/projects/project-1-2.jpg" class="img-fluid border-radius-0" alt=""></span></span>
+					if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Porto Watch</span>
-										<span class="thumb-info-type">Media</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
+					$post_id = get_the_ID();
 
-				<div class="col-sm-6 col-lg-3 isotope-item logos">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-2.jpg" class="img-fluid border-radius-0" alt="">
+				?>
 
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Identity</span>
-										<span class="thumb-info-type">Logo</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
+					<div class="col-md-6 col-lg-3 isotope-item websites">
+						<div class="portfolio-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-lighten border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+
+										<?php the_post_thumbnail( 'medium' ); ?>
+										<!-- <img src="img/projects/project.jpg" class="img-fluid border-radius-0" alt=""> -->
+
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner"><?php the_title(); ?></span>
+											<span class="thumb-info-type"><?php echo get_post_meta($post_id, 'project_type', true); ?></span>
+										</span>
+										<span class="thumb-info-action">
+											<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
+										</span>
 									</span>
 								</span>
-							</span>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6 col-lg-3 isotope-item websites">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-27.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Porto Screens</span>
-										<span class="thumb-info-type">Website</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item logos">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-4.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Three Bottles</span>
-										<span class="thumb-info-type">Logo</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item brands">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-5.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Company T-Shirt</span>
-										<span class="thumb-info-type">Brand</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item websites">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-6.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Mobile Mockup</span>
-										<span class="thumb-info-type">Website</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item medias">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-7.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Porto Label</span>
-										<span class="thumb-info-type">Media</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item logos">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-23.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Business Folders</span>
-										<span class="thumb-info-type">Logo</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item websites">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-24.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Tablet Screen</span>
-										<span class="thumb-info-type">Website</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item medias">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-25.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Black Watch</span>
-										<span class="thumb-info-type">Media</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 isotope-item websites">
-					<div class="portfolio-item">
-						<a href="portfolio-single-wide-slider.html">
-							<span class="thumb-info thumb-info-lighten border-radius-0">
-								<span class="thumb-info-wrapper border-radius-0">
-									<img src="img/projects/project-26.jpg" class="img-fluid border-radius-0" alt="">
-
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">Monitor Mockup</span>
-										<span class="thumb-info-type">Website</span>
-									</span>
-									<span class="thumb-info-action">
-										<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-									</span>
-								</span>
-							</span>
-						</a>
-					</div>
-				</div>
+				<?php endwhile; endif; ?>
 
 			</div>
 		</div>

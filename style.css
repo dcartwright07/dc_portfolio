@@ -15856,7 +15856,7 @@ html.boxed .slider-container {
   display: block;
   position: relative;
   text-decoration: none;
-  max-width: 100%;
+  max-width: 90%;
   background-color: #FFF;
   border-radius: 4px;
   overflow: hidden;
