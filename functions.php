@@ -5,8 +5,7 @@
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
-// Initialize menus to use in the admin panel
-// ====================================
+/* #region Initialize menus to use in the admin panel */
 function register_theme_menus() {
 
 	register_nav_menus(
@@ -18,9 +17,9 @@ function register_theme_menus() {
 
 }
 add_action( 'init', 'register_theme_menus' );
+/* #endregion */
 
-// Import all CSS
-// ====================================
+/* #region Import all CSS */
 function dc_theme_style() {
 
 	// Webfonts
@@ -40,9 +39,9 @@ function dc_theme_style() {
 
 }
 add_action( 'wp_enqueue_scripts', 'dc_theme_style' );
+/* #endregion */
 
-// Import all JavaScript
-// ====================================
+/* #region Import all JavaScript */
 function dc_theme_js() {
 
 	// Head Scripts
@@ -74,6 +73,7 @@ function dc_theme_js() {
 
 }
 add_action( 'wp_enqueue_scripts', 'dc_theme_js' );
+/* #endregion */
 
 // Add SVG image support to available MIME types
 // ====================================
