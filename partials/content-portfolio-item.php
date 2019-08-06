@@ -1,3 +1,4 @@
+<?php $post_id = get_the_ID(); ?>
 <div class="portfolio-item">
 	<a href="<?php the_permalink(); ?>">
 		<span class="thumb-info thumb-info-lighten border-radius-0">
