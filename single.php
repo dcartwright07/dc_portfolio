@@ -41,9 +41,9 @@
 
 				<?php the_content(); ?>
 
-				<hr class="solid my-5">
+				<!-- <hr class="solid my-5">
 
-				<strong class="text-uppercase text-1 mr-3 text-dark float-left position-relative top-2">Share</strong>
+				<strong class="text-uppercase text-1 mr-3 text-dark float-left position-relative top-2">Connect</strong>
 				<ul class="social-icons">
 					<li class="social-icons-facebook">
 						<a href="https://www.facebook.com/nicholas.cartwright1" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -57,7 +57,7 @@
 					<li class="social-icons-github">
 						<a href="https://github.com/dcartwright07" target="_blank" title="Linkedin"><i class="fab fa-github"></i></a>
 					</li>
-				</ul>
+				</ul> -->
 
 			</div>
 			<div class="col-md-5">
