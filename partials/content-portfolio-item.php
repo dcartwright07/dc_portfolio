@@ -1,20 +1,18 @@
-<div class="col-lg-4">
-	<h5 class="text-uppercase mt-4">Bottom Info Dark Linear</h5>
-	<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear thumb-info-centered-icons">
-		<span class="thumb-info-wrapper">
-			<img src="img/blog/square/blog-33.jpg" class="img-fluid" alt="">
-			<span class="thumb-info-title">
-				<span class="thumb-info-inner line-height-1">Project Title</span>
-				<span class="thumb-info-type">Project Type</span>
-			</span>
-			<span class="thumb-info-action">
-				<a href="#">
-					<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-play-circle text-dark text-dark"></i></span>
-				</a>
-				<a href="portfolio-single-wide-slider.html">
-					<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-plus text-dark"></i></span>
-				</a>
+<div class="portfolio-item">
+	<a href="<?php the_permalink(); ?>">
+		<span class="thumb-info thumb-info-lighten border-radius-0">
+			<span class="thumb-info-wrapper border-radius-0">
+
+				<?php the_post_thumbnail( 'medium' ); ?>
+
+				<span class="thumb-info-title">
+					<span class="thumb-info-inner"><?php the_title(); ?></span>
+					<span class="thumb-info-type"><?php echo get_post_meta($post_id, 'project_type', true); ?></span>
+				</span>
+				<span class="thumb-info-action">
+					<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
+				</span>
 			</span>
 		</span>
-	</span>
+	</a>
 </div>
