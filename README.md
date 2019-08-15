@@ -11,5 +11,5 @@ The following plugins are used for development of my theme:
 
 ### Tools
 
-**CodeKit:**
-The CodeKit application is being used to compile the sass files in this project.
+**WPGulp:**
+WPGulp is being used to compile the sass and javascript files in this project.
