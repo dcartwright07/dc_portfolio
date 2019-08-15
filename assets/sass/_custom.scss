@@ -1,15 +1,200 @@
 /* Add here all your CSS customizations */
 
-$link-color: #0099e6;
+$red: #910F23;
+$bg-red: #A53A4B;
+$light-red: #AF505F;
+
+html {
+	.bg-color-primary {
+		background-color: $bg-red !important;
+	}
+	.bg-primary {
+		@extend .bg-color-primary;
+	}
+	.btn-primary {
+		@extend .bg-color-primary;
+		border-color: $bg-red $bg-red $red;
+		&:hover {
+			background-color: $light-red !important;
+    	border-color: $light-red $light-red $bg-red;
+		}
+	}
+	.text-primary {
+		color: #A53A4B !important;
+	}
+	.text-color-primary {
+		@extend .text-primary;
+	}
+	.text-color-white {
+		color: #fff;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.btn-with-arrow {
+		&.btn-primary {
+			@extend .text-primary;
+			background-color: #fff !important;
+			&:hover {
+				border: none;
+			}
+			span {
+				background-color: $light-red;
+				-webkit-box-shadow: 2px 3px 18px -3px $light-red;
+				box-shadow: 2px 3px 18px -3px $light-red;
+			}
+		}
+	}
+	.list-primary {
+		&.list-icons {
+			li > [class*="fa-"]:first-child {
+				color: $light-red;
+    		border-color: $light-red;
+			}
+		}
+	}
+}
+
+a {
+	color: $light-red;
+	&:hover {
+		color: $red;
+	}
+}
+
+#header {
+	.header-nav {
+		&.header-nav-links {
+			nav > ul li:hover > a {
+				color: $light-red;
+			}
+		}
+	}
+}
+.thumb-info {
+	.thumb-info-type {
+		@extend .bg-color-primary;
+	}
+}
 
 .social-icons {
 	&.social-icons-opacity-light {
 		li {
 			a {
 				&:hover {
-					background: $link-color;
+					background: $bg-red;
 				}
 			}
+		}
+	}
+	li {
+		&:hover {
+			a {
+				background: $bg-red !important;
+			}
+		}
+	}
+}
+
+.img-thumbnail {
+	box-shadow: 0 4px 2px -2px #eee;
+}
+
+section {
+	&.timeline {
+		&:before {
+			left: 5%;
+			// @extend .bg-color-primary;
+		}
+		.timeline-box {
+			width: 90%;
+			box-shadow: none;
+			background: none;
+			border: none;
+			.row {
+				margin-right: 0;
+				margin-left: 0;
+			}
+			.experience-info {
+				padding: 40px 30px;
+				color: #eee;
+				.from {
+					display: inline-block;
+					width: 49%;
+					font-size: 12px;
+					line-height: 1.3;
+					span {
+						display: block;
+						text-transform: none;
+						font-size: 16px;
+					}
+				}
+				.to {
+					@extend .from;
+				}
+				.company {
+					font-size: 18px;
+					.company-location {
+						display: block;
+						opacity: 0.5;
+						text-transform: uppercase;
+						font-size: 11px;
+					}
+				}
+			}
+			.experience-description {
+				padding: 40px;
+			}
+			&.right {
+				margin-top: 0;
+				&:before {
+					left: 5%;
+					@extend .bg-color-primary;
+					-webkit-box-shadow: 0 0 0 3px #FFF, 0 0 0 6px $bg-red;
+    			box-shadow: 0 0 0 3px #FFF, 0 0 0 6px $bg-red;
+				}
+			}
+		}
+	}
+}
+#education {
+	.custom-box-details-2 {
+		padding: 40px;
+		.icons {
+			font-size: 2em;
+		}
+	}
+}
+#recommendations {
+	.testimonial {
+		blockquote {
+			background: $bg-red;
+		}
+		&.testimonial-with-quotes {
+			blockquote {
+				&:before {
+					@extend .text-color-white;
+				}
+				&:after {
+					@extend .text-color-white;
+				}
+			}
+		}
+	}
+}
+#skills {
+	.progress {
+		background: #eee;
+	}
+	.progress-bar {
+		background-color: $bg-red;
+	}
+}
+
+#footer {
+	.footer-copyright {
+		p {
+			color: #fff;
 		}
 	}
 }

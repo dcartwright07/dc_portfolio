@@ -15,22 +15,15 @@
 		<div class="row">
 			<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
 
-				<div class="owl-carousel owl-theme nav-inside nav-inside-edge nav-squared nav-with-transparency nav-dark nav-lg d-block overflow-hidden" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'autoHeight': true}" style="height: 510px;">
-
-					<?php
-						$images = get_field( 'images' );
-						if( $images ) :
-					?>
-						<div>
-							<?php foreach( $images as $image ) : ?>
-								<div class="img-thumbnail border-0 border-radius-0 p-0 d-block">
-									<img src="<?php echo $image['url']; ?>" class="img-fluid border-radius-0" alt="<?php echo $image['alt']; ?>" />
-								</div>
-							<?php endforeach; ?>
-						</div>
-					<?php endif; ?>
-
-				</div>
+				<?php
+					$image = get_field( 'images' );
+					$size = 'full';
+					if( !empty( $image ) ) :
+				?>
+					<div class="img-thumbnail p-0 d-block">
+						<img src="<?php echo $image['url']; ?>" class="img-fluid border-radius-0" alt="<?php echo $image['alt']; ?>" />
+					</div>
+				<?php endif; ?>
 
 			</div>
 		</div>

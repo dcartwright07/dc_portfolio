@@ -3908,7 +3908,7 @@ a{color:#08c}
 a:hover{color:#0099e6}
 a:focus{color:#0099e6}
 a:active{color:#0077b3}
-html .text-color-primary,html .text-primary{color:#08c !important}
+html .text-color-primary,html .text-primary,html .text-color-primary,html .btn-with-arrow.btn-primary{color:#08c !important}
 html .text-color-hover-primary:hover,html .text-hover-primary:hover{color:#08c !important}
 html .text-color-secondary,html .text-secondary{color:#e36159 !important}
 html .text-color-hover-secondary:hover,html .text-hover-secondary:hover{color:#e36159 !important}
@@ -3921,7 +3921,7 @@ html .text-color-hover-dark:hover,html .text-hover-dark:hover{color:#212529 !imp
 html .text-color-light,html .text-light{color:#FFF !important}
 html .text-color-hover-light:hover,html .text-hover-light:hover{color:#FFF !important}
 .gradient-text-color{color:#08c;background:-webkit-gradient(linear,left top,right bottom,from(#08c),to(#e36159));background:linear-gradient(to bottom right,#08c,#e36159);background-image:-webkit-gradient(linear,left top,right top,from(#08c),to(#e36159));background-image:linear-gradient(to right,#08c,#e36159)}
-html .bg-color-primary,html .bg-primary{background-color:#08c !important}
+html .bg-color-primary,html .bg-primary,html .btn-primary,html .thumb-info .thumb-info-type,.thumb-info html .thumb-info-type,html section.timeline .timeline-box.right:before,section.timeline html .timeline-box.right:before,html .bg-primary{background-color:#08c !important}
 html .bg-color-hover-primary:hover,html .bg-hover-primary:hover{background-color:#08c !important}
 html .bg-color-secondary,html .bg-secondary{background-color:#e36159 !important}
 html .bg-color-hover-secondary:hover,html .bg-hover-secondary:hover{background-color:#e36159 !important}
@@ -4370,7 +4370,6 @@ html .inverted-tertiary{background-color:#2baab1}
 html .inverted-quaternary{background-color:#383f48}
 html .inverted-dark{background-color:#212529}
 html .inverted-light{background-color:#FFF}
-.owl-carousel .owl-dots .owl-dot.active span,.owl-carousel .owl-dots .owl-dot:hover span{background-color:#0074ad}
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"],.owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:hover,.owl-carousel.show-nav-title .owl-nav button[class*="owl-"].hover{color:#08c}
 .owl-carousel .owl-nav button[class*="owl-"]{background-color:#08c;border-color:#08c #08c #069;color:#FFF}
 .owl-carousel .owl-nav button[class*="owl-"]:hover,.owl-carousel .owl-nav button[class*="owl-"].hover{background-color:#00a1f2;border-color:#0af #0af #08c}
@@ -4825,7 +4824,39 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after{background-color:#2
 .scrollable.colored-slider .scrollable-slider{background:#08c}
 .sample-icon-list .sample-icon a:hover{background-color:#08c}
 html.boxed .body{border-top-color:#08c}
-.social-icons.social-icons-opacity-light li a:hover{background:#0099e6}
+html .bg-color-primary,html .bg-primary,html .btn-primary,html .thumb-info .thumb-info-type,.thumb-info html .thumb-info-type,html section.timeline .timeline-box.right:before,section.timeline html .timeline-box.right:before{background-color:#a53a4b !important}
+html .btn-primary{border-color:#a53a4b #a53a4b #910f23}
+html .btn-primary:hover{background-color:#af505f !important;border-color:#af505f #af505f #a53a4b}
+html .text-primary,html .text-color-primary,html .btn-with-arrow.btn-primary{color:#a53a4b !important}
+html .text-color-white,html #recommendations .testimonial.testimonial-with-quotes blockquote:before,#recommendations .testimonial.testimonial-with-quotes html blockquote:before,html #recommendations .testimonial.testimonial-with-quotes blockquote:after,#recommendations .testimonial.testimonial-with-quotes html blockquote:after{color:#fff}
+html .text-center{text-align:center}
+html .btn-with-arrow.btn-primary{background-color:#fff !important}
+html .btn-with-arrow.btn-primary:hover{border:0}
+html .btn-with-arrow.btn-primary span{background-color:#af505f;-webkit-box-shadow:2px 3px 18px -3px #af505f;box-shadow:2px 3px 18px -3px #af505f}
+html .list-primary.list-icons li>[class*="fa-"]:first-child{color:#af505f;border-color:#af505f}
+a{color:#af505f}
+a:hover{color:#910f23}
+#header .header-nav.header-nav-links nav>ul li:hover>a{color:#af505f}
+.social-icons.social-icons-opacity-light li a:hover{background:#a53a4b}
+.social-icons li:hover a{background:#a53a4b !important}
+.img-thumbnail{-webkit-box-shadow:0 4px 2px -2px #eee;box-shadow:0 4px 2px -2px #eee}
+section.timeline:before{left:5%}
+section.timeline .timeline-box{width:90%;-webkit-box-shadow:none;box-shadow:none;background:0;border:0}
+section.timeline .timeline-box .row{margin-right:0;margin-left:0}
+section.timeline .timeline-box .experience-info{padding:40px 30px;color:#eee}
+section.timeline .timeline-box .experience-info .from,section.timeline .timeline-box .experience-info .to{display:inline-block;width:49%;font-size:12px;line-height:1.3}
+section.timeline .timeline-box .experience-info .from span,section.timeline .timeline-box .experience-info .to span{display:block;text-transform:none;font-size:16px}
+section.timeline .timeline-box .experience-info .company{font-size:18px}
+section.timeline .timeline-box .experience-info .company .company-location{display:block;opacity:.5;text-transform:uppercase;font-size:11px}
+section.timeline .timeline-box .experience-description{padding:40px}
+section.timeline .timeline-box.right{margin-top:0}
+section.timeline .timeline-box.right:before{left:5%;-webkit-box-shadow:0 0 0 3px #FFF,0 0 0 6px #a53a4b;box-shadow:0 0 0 3px #FFF,0 0 0 6px #a53a4b}
+#education .custom-box-details-2{padding:40px}
+#education .custom-box-details-2 .icons{font-size:2em}
+#recommendations .testimonial blockquote{background:#a53a4b}
+#skills .progress{background:#eee}
+#skills .progress-bar{background-color:#a53a4b}
+#footer .footer-copyright p{color:#fff}
 @media(min-width:576px){#header .header-nav-top .nav>li.nav-item-left-border.nav-item-left-border-sm-show:after{content:''}
 #header .header-nav-features.header-nav-features-sm-show-border:before,#header .header-nav-features.header-nav-features-sm-show-border:after{content:''}
 .text-sm-1{font-size:.8em !important}

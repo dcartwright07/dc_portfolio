@@ -28,7 +28,7 @@
 				<div class="row">
 					<div class="col-md-12 align-self-center p-static order-2 text-center">
 						<div class="overflow-hidden pb-2">
-							<h1 class="text-dark font-weight-bold text-9 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">
+							<h1 class="text-primary font-weight-bold text-9 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">
 								<?php the_title(); ?>
 							</h1>
 						</div>

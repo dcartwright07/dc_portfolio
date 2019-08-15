@@ -5,9 +5,9 @@
 	<div class="container container-lg">
 		<div class="row">
 			<div class="col-lg-7 pt-5">
-				<h2 class="font-weight-bold text-10 line-height-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span class="text-5">Portfolio</span></h2>
-				<!-- <h4 class="text-6 line-height-6 font-weight-normal appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"><span class="opacity-6">Web Development</span></h4> -->
-				<a class="btn btn-primary btn-with-arrow mb-2 ml-0 pl-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" href="/contact">Contact Me <span><i class="fas fa-chevron-right"></i></span></a>
+				<h2 class="font-weight-bold text-10 line-height-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span class="text-5">Hello, I'm Dominic Cartwright.</span></h2>
+				<h4 class="text-6 line-height-6 font-weight-normal appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"><span class="opacity-6">Your looking at my porfolio. If you have any questions, please do not hesitate to contact me.</span></h4>
+				<a class="btn btn-primary home-contact btn-with-arrow mb-2 ml-0 pl-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" href="/contact">Contact Me <span><i class="fas fa-chevron-right"></i></span></a>
 			</div>
 		</div>
 	</div>
