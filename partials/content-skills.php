@@ -29,14 +29,14 @@
 								<span>Javascript</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="60%" data-appear-animation-delay="600"></div>
+								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="600"></div>
 							</div>
 
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>PHP</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="50%" data-appear-animation-delay="900"></div>
+								<div class="progress-bar" data-appear-progress-animation="65%" data-appear-animation-delay="900"></div>
 							</div>
 						</div>
 					</div>
@@ -52,7 +52,7 @@
 								<span>WordPress</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="300"></div>
+								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="300"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>MySql</span>
@@ -64,7 +64,7 @@
 								<span>SASS</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="900"></div>
+								<div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="900"></div>
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 								<span>Foundation</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="300"></div>
+								<div class="progress-bar" data-appear-progress-animation="85%" data-appear-animation-delay="300"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>Photography</span>
