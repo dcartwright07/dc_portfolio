@@ -57,7 +57,7 @@
 				<h2 class="text-color-dark font-weight-normal text-5 mb-2">Project <strong class="font-weight-extra-bold">Details</strong></h2>
 				<ul class="list list-icons list-primary list-borders text-2">
 					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong> <?php the_field( 'client' ); ?></li>
-					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong> <?php the_field( 'date' ); ?></li>
+					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Deployment:</strong> <?php the_field( 'date' ); ?></li>
 
 					<?php
 						$languages = get_field( 'languages' );
