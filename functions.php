@@ -89,4 +89,32 @@ function add_file_types_to_uploads( $file_types ) {
 }
 add_filter( 'upload_mimes', 'add_file_types_to_uploads' );
 
+/* #region Add Custom Columns to Job Experience */
+function dc_experience_columns( $columns )
+{
+
+	$columns = array(
+		'cb'	 	=> '<input type="checkbox" />',
+		'title' 	=> 'Title',
+		'company' 	=> 'Company',
+		'date'		=>	'Date',
+	);
+	return $columns;
+
+}
+
+function dc_experience_custom_columns( $column )
+{
+
+	global $post;
+	if( $column == 'company' ) {
+		echo get_field( 'company', $post->ID );
+	}
+
+}
+
+add_action("manage_experience_posts_custom_column", "dc_experience_custom_columns");
+add_filter("manage_experience_posts_columns", "dc_experience_columns");
+/* #endregion */
+
 ?>
