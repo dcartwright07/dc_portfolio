@@ -4834,6 +4834,7 @@ html .btn-with-arrow.btn-primary{background-color:#fff !important}
 html .btn-with-arrow.btn-primary:hover{border:0}
 html .btn-with-arrow.btn-primary span{background-color:#af505f;-webkit-box-shadow:2px 3px 18px -3px #af505f;box-shadow:2px 3px 18px -3px #af505f}
 html .list-primary.list-icons li>[class*="fa-"]:first-child{color:#af505f;border-color:#af505f}
+html.sticky-header-active #header .header-body{border-bottom-color:#ddd;-webkit-box-shadow:none;box-shadow:none}
 a{color:#af505f}
 a:hover{color:#910f23}
 #header .header-nav.header-nav-links nav>ul li:hover>a{color:#af505f}
