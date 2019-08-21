@@ -1,9 +1,5 @@
 /* Add here all your CSS customizations */
 
-$red: #910F23;
-$bg-red: #A53A4B;
-$light-red: #AF505F;
-
 html {
 	.bg-color-primary {
 		background-color: $bg-red !important;
@@ -69,6 +65,9 @@ a {
 				color: $light-red;
 			}
 		}
+	}
+	.header-btn-collapse-nav {
+		background-color: $bg-red;
 	}
 }
 .thumb-info {

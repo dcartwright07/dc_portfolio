@@ -38,6 +38,30 @@
 		</div>
 
 		<div class="body">
+
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+				<div class="mobile-logo">
+				<?php
+
+					echo '<img alt="Dominic Cartwright Logo" width="200" src="' . get_template_directory_uri() . '/assets/img/logo-light.svg">';
+
+				?>
+				</div>
+
+				<?php
+
+					$defaults = array(
+						'container' => false,
+						'theme_location' => 'primary-menu',
+						'menu_id' => 'mainNav',
+						'menu_class' => 'navbar-nav mr-auto'
+					);
+					wp_nav_menu( $defaults );
+
+				?>
+
+			</div>
+
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-top-0">
 					<div class="header-container container container-lg">
@@ -75,9 +99,10 @@
 
 											</nav>
 										</div>
-										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+										<button class="btn header-btn-collapse-nav" type="button" data-toggle="offcanvas">
 											<i class="fas fa-bars"></i>
 										</button>
+
 									</div>
 
 								</div>

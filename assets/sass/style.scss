@@ -10,6 +10,10 @@ Editor URI: http://dominiccartwright.com
 This theme was coverted from an HTML5 template to a WordPress theme by Dominic Cartwright to use for his portfolio.
 */
 
+$red: #910F23;
+$bg-red: #A53A4B;
+$light-red: #AF505F;
+
 // Theme Styles
 @import 'theme';
 @import 'theme-elements';
@@ -25,3 +29,4 @@ This theme was coverted from an HTML5 template to a WordPress theme by Dominic C
 
 // Custom Styles
 @import 'custom';
+@import 'custom/offcanvas';
