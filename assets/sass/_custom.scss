@@ -110,9 +110,11 @@ a {
 
 section {
 	&.timeline {
-		&:before {
-			left: 5%;
-			// @extend .bg-color-primary;
+		@media (min-width: 992px) {
+			&:before {
+				left: 5%;
+				// @extend .bg-color-primary;
+			}
 		}
 		.timeline-box {
 			width: 90%;
@@ -155,6 +157,7 @@ section {
 			}
 			&.right {
 				margin-top: 0;
+				padding: 0;
 				&:before {
 					left: 5%;
 					@extend .bg-color-primary;
