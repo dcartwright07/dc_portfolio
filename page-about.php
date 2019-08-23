@@ -12,7 +12,7 @@
 				<div class="overflow-hidden mb-3">
 					<p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="500">Web Designer/Developer</p>
 				</div>
-				<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">I am a Web Designer/Developer. I graduated from Taylor University with a Bachelor's Degree in Computer Science & Digital Media. Even though I studied a wide variety of topics in my field, I decided to focus on Web Design and Development.</p>
+				<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">I seek to provide web solutions for companies and non-profit organizations that will enhance their vision and achieve their goals. I am also a technology enthusiast, philosophical thinker, and people-lover. Being of Caribbean descent, I like to chill to reggae tunes and I get really excited when I'm talking to people.</p>
 				<!-- <p class="pb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">Consectetur adipiscing elit. Aliquam iaculis sit amet enim ac sagittis. Curabitur eget leo varius, elementum mauris eget, egestas quam.</p> -->
 				<hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
 				<div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
