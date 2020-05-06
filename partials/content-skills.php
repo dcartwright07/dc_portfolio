@@ -77,16 +77,16 @@
 								<div class="progress-bar" data-appear-progress-animation="75%"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
-								<span>Foundation 6</span>
+								<span>Accessibility</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="95%" data-appear-animation-delay="300"></div>
+								<div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="300"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
-								<span>Photography</span>
+								<span>UX/UI Design</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
+								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="600"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>E-Blasts</span>
