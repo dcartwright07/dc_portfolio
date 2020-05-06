@@ -32,11 +32,11 @@
 							<li class="social-icons-linkedin">
 								<a href="https://www.linkedin.com/in/dominic-cartwright/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
 							</li>
-							<li class="social-icons-googleplus">
+							<!-- <li class="social-icons-googleplus">
 								<a href="https://plus.google.com/u/0/100775024449756134308/posts" target="_blank" title="Google+"><i class="fab fa-google-plus"></i></a>
-							</li>
+							</li> -->
 							<li class="social-icons-github">
-								<a href="https://github.com/dcartwright07" target="_blank" title="Linkedin"><i class="fab fa-github"></i></a>
+								<a href="https://github.com/dcartwright07" target="_blank" title="Github"><i class="fab fa-github"></i></a>
 							</li>
 						</ul>
 					</div>

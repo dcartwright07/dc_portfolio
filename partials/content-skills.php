@@ -29,14 +29,14 @@
 								<span>Javascript</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="600"></div>
+								<div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="600"></div>
 							</div>
 
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>PHP</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="65%" data-appear-animation-delay="900"></div>
+								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="900"></div>
 							</div>
 						</div>
 					</div>
@@ -46,13 +46,13 @@
 								<span>dotCMS</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="85%"></div>
+								<div class="progress-bar" data-appear-progress-animation="90%"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>WordPress</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="75%" data-appear-animation-delay="300"></div>
+								<div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>MySql</span>
@@ -77,10 +77,10 @@
 								<div class="progress-bar" data-appear-progress-animation="75%"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
-								<span>Foundation</span>
+								<span>Foundation 6</span>
 							</div>
 							<div class="progress mb-2">
-								<div class="progress-bar" data-appear-progress-animation="85%" data-appear-animation-delay="300"></div>
+								<div class="progress-bar" data-appear-progress-animation="95%" data-appear-animation-delay="300"></div>
 							</div>
 							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
 								<span>Photography</span>
